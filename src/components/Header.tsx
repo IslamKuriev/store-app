@@ -27,7 +27,7 @@ const Header: React.FC = () => {
           <div className="header__logo">
             <img width="38" src={logoStore} alt="Store logo" />
             <div>
-              <h1>React Store</h1>
+              <h1>Fash Store</h1>
               <p>Интернет магазин</p>
             </div>
           </div>

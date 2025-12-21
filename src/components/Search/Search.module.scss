@@ -1,5 +1,8 @@
 .root {
   position: relative;
+  @media (max-width: 452px) {
+    margin-top: 20px;
+  }
 }
 .input {
   border: 1px solid rgba(0, 0, 0, 0.1);

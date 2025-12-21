@@ -6,8 +6,8 @@ import { setSearchValue } from '../../redux/filter/slice';
 
 const Search: React.FC = () => {
   const dispatch = useDispatch();
-  const [value, setValue] = useState('');
-  const inputRef = useRef<HTMLInputElement>(null);
+   const [value, setValue] = useState('')
+   const inputRef = useRef<HTMLInputElement>(null);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const updateSearchValue = useCallback(
