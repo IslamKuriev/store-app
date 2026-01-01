@@ -33,14 +33,20 @@ const FullProduct: React.FC = () => {
   }
 
   return (
-    <div className="container">
-      <img style={{ width: '260px' }} src={itemsById.imageUrl} alt="Product" />
-      <h2>{itemsById.title}</h2>
-      <h4>{itemsById.price} ₽</h4>
-      <div className="button pay-btn">
-        <Link to={'/'}>
-          <span>Назад</span>
-        </Link>
+    <div className="container__full-product">
+      <div>
+        <img style={{ width: '260px' }} src={itemsById.imageUrl} alt="Product" />
+      </div>
+      <div className='desc__block'>
+        <h2>{itemsById.title}</h2>
+        <p className='text__desc'>{itemsById.description}</p>
+        <h3>{itemsById.price} ₽</h3>
+        <div className="back-btn">
+          <Link to={'/'}>
+            <span>Назад</span>
+          </Link>
+        </div>
+
       </div>
     </div>
   );
